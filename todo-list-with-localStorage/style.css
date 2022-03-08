@@ -1,0 +1,19 @@
+.formContainer {
+    padding: 20px;
+}
+
+.todoInput {
+    padding: 20px;
+    width: 50%;
+}
+
+.todoListContainer {
+    padding: 20px;
+}
+
+.totoItem {
+    background-color: red;
+   padding: 20px;
+   margin: 4px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
