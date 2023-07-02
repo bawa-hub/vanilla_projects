@@ -1,12 +1,11 @@
 let elevator = document.querySelector(".elevator");
-let buttons = document.querySelectorAll(".handle button");
+let btns = document.querySelectorAll(".handle button");
 var targetFloor = null;
 
-buttons.forEach((button) => {
+btns.forEach((button) => {
   button.addEventListener("click", function () {
-    let setFloor = this.getAttribute("data-set-floor");
-    let selectedFloor = document.getElementById(`floor-${setFloor}`);
-
+    let floorNo = this.getAttribute("floor-no");
+    let selectedFloor = document.getElementById(`floor-${floorNo}`);
     if (targetFloor == null || targetFloor != selectedFloor) {
       targetFloor = selectedFloor;
       elevator.style.top = targetFloor.offsetTop + "px";

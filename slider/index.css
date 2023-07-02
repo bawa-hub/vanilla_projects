@@ -1,0 +1,55 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+.product-carousel {
+    position: relative;
+    overflow: hidden;
+    padding: 26px;
+}
+
+.product-container {
+    padding: 0 10px;
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+#prev-btn,
+#nxt-btn {
+    border: none;
+    width: 60px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(221, 202, 202, 0);
+}
+
+#nxt-btn {
+    right: 0;
+}
+
+#nxt-btn p,
+#prev-btn p {
+    font-size: 50px;
+    background-color: rgba(255, 255, 255, 0.436);
+    box-shadow: 0px 0px 10px 1px black;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.mycard {
+    min-width: 300px;
+    max-width: 300px;
+
+    height: 400px;
+    background-color: black;
+    margin: 10px;
+    color: white;
+}
